@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO: edit the title and description if you change your target role -->
+  <title>Kavin Prathi Chellamuthu | Senior Software Developer – Python, React &amp; AI</title>
+  <meta name="description" content="Portfolio of Kavin Prathi Chellamuthu, a Senior Software Developer based in London specialising in Python, FastAPI, React, TypeScript, AWS and AI/LLM solutions for fintech and enterprise platforms." />
+  <meta name="author" content="Kavin Prathi Chellamuthu" />
+  <meta name="theme-color" content="#0b0d17" />
+
+  <!-- Social sharing preview -->
+  <meta property="og:title" content="Kavin Prathi Chellamuthu | Senior Software Developer" />
+  <meta property="og:description" content="Full-stack engineer building scalable cloud-native, fintech and AI platforms." />
+  <meta property="og:type" content="website" />
+
+  <!-- Inline SVG favicon (no extra file needed) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%236366f1'/%3E%3Ctext x='50' y='66' font-size='52' font-family='Arial' font-weight='700' text-anchor='middle' fill='white'%3EK%3C/text%3E%3C/svg%3E" />
+
+  <!-- Free resources: Google Fonts (Inter) + Font Awesome icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#home" class="nav__logo" aria-label="Kavin Prathi Chellamuthu – home">
+        <span class="nav__logo-mark">K</span><span class="nav__logo-text">Kavin<span class="accent">.</span></span>
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#home" class="nav__link">Home</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#education" class="nav__link">Education</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#experience" class="nav__link">Experience</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#certifications" class="nav__link">Achievements</a></li>
+        <li><a href="#contact" class="nav__link nav__link--cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero__glow hero__glow--one" aria-hidden="true"></div>
+      <div class="hero__glow hero__glow--two" aria-hidden="true"></div>
+
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="eyebrow reveal"><span class="dot" aria-hidden="true"></span> Available for new opportunities</p>
+          <h1 id="hero-title" class="hero__title reveal">
+            Hi, I'm <span class="gradient-text">Kavin Prathi Chellamuthu</span>
+          </h1>
+          <p class="hero__role reveal">Senior Software Developer <span class="muted">· Full-Stack · Cloud &amp; AI</span></p>
+          <p class="hero__intro reveal">
+            I design and ship scalable, cloud-native platforms across fintech, e-commerce and AI. From a
+            Python &amp; React CRM/CMS integrated with government APIs to Retrieval-Augmented Generation
+            workflows on Pinecone, I turn ambiguous business needs into reliable software.
+          </p>
+
+          <div class="hero__actions reveal">
+            <a href="#projects" class="btn btn--primary">View My Work <i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a>
+            <a href="#contact" class="btn btn--ghost">Contact Me <i class="fa-solid fa-paper-plane" aria-hidden="true"></i></a>
+          </div>
+
+          <!-- Social links: set the URLs in script.js (PROFILE_LINKS). Until then they show a friendly reminder. -->
+          <ul class="socials reveal" aria-label="Social links">
+            <li><a href="#" data-link="github" class="social-link" aria-label="GitHub profile"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
+            <li><a href="#" data-link="linkedin" class="social-link" aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+            <li><a href="mailto:prathikavinc001@gmail.com" class="social-link" aria-label="Send an email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+
+        <!-- Profile photo: leave empty to show initials, or set PROFILE_PHOTO in script.js -->
+        <div class="hero__visual reveal">
+          <div class="avatar" id="avatar">
+            <span class="avatar__initials" id="avatarInitials" aria-hidden="true">KP</span>
+            <img id="avatarImg" alt="Portrait of Kavin Prathi Chellamuthu" hidden />
+            <span class="avatar__hint" id="avatarHint">[Add Profile Photo]</span>
+          </div>
+          <div class="chip chip--one" aria-hidden="true"><i class="fa-brands fa-python"></i> Python</div>
+          <div class="chip chip--two" aria-hidden="true"><i class="fa-brands fa-react"></i> React</div>
+          <div class="chip chip--three" aria-hidden="true"><i class="fa-brands fa-aws"></i> AWS</div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-hint" aria-label="Scroll to About section"><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__kicker">About Me</p>
+          <h2 id="about-title" class="section__title">Building scalable software that moves the business</h2>
+        </header>
+
+        <div class="about__grid">
+          <div class="about__text reveal">
+            <p>
+              I'm a Senior Software Developer with extensive full-stack expertise delivering enterprise
+              fintech, e-commerce and AI solutions. I led the design and launch of a Python and React
+              CRM/CMS platform integrated with government APIs and AI models, and architected
+              Retrieval-Augmented Generation (RAG) workflows using Pinecone to ground AI responses in
+              proprietary, data-driven content.
+            </p>
+            <p>
+              I'm recognised for building scalable, cloud-native applications and for driving
+              cross-functional collaboration across global teams. I own services end to end, from
+              technical design and automated testing to deployment, monitoring and on-call operations.
+            </p>
+            <p>
+              I'm now looking to apply this experience to accelerate innovative product development and
+              deliver measurable business impact.
+            </p>
+
+            <ul class="facts" aria-label="Quick facts">
+              <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Feltham, London, UK</li>
+              <li><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Valid DBS security clearance</li>
+              <li><i class="fa-solid fa-car" aria-hidden="true"></i> UK Category B driving licence</li>
+              <li><i class="fa-solid fa-plane" aria-hidden="true"></i> Willing to relocate across the UK and internationally</li>
+              <li><i class="fa-solid fa-suitcase-rolling" aria-hidden="true"></i> Open to short or long-term travel</li>
+            </ul>
+          </div>
+
+          <div class="stats reveal" aria-label="Career highlights">
+            <div class="stat"><span class="stat__num">2019</span><span class="stat__label">Building software professionally since</span></div>
+            <div class="stat"><span class="stat__num">5</span><span class="stat__label">Roles across fintech, e-commerce &amp; AI</span></div>
+            <div class="stat"><span class="stat__num">19%</span><span class="stat__label">Faster LLM inference on a delivered model</span></div>
+            <div class="stat"><span class="stat__num">2</span><span class="stat__label">Degrees: B.E. Computer Science &amp; MSc</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section section--alt" id="education" aria-labelledby="education-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__kicker">Education</p>
+          <h2 id="education-title" class="section__title">Academic background</h2>
+        </header>
+
+        <div class="cards cards--2">
+          <article class="card edu reveal">
+            <div class="edu__icon" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></div>
+            <p class="card__meta">Jan 2023 – Jan 2024</p>
+            <h3 class="card__title">MSc in Management with Data Analysis</h3>
+            <p class="card__sub">BPP University, United Kingdom</p>
+          </article>
+
+          <article class="card edu reveal">
+            <div class="edu__icon" aria-hidden="true"><i class="fa-solid fa-building-columns"></i></div>
+            <p class="card__meta">Aug 2016 – Nov 2020</p>
+            <h3 class="card__title">B.E. in Computer Science</h3>
+            <p class="card__sub">Anna University, India</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__kicker">Technical Skills</p>
+          <h2 id="skills-title" class="section__title">Tools and technologies I work with</h2>
+          <p class="section__lead">Every skill below comes straight from my CV.</p>
+        </header>
+
+        <div class="cards cards--3">
+          <article class="card skill-card reveal">
+            <h3 class="skill-card__title"><i class="fa-solid fa-code" aria-hidden="true"></i> Programming Languages</h3>
+            <ul class="badges">
+              <li>Python</li><li>JavaScript</li><li>TypeScript</li><li>SQL</li>
+            </ul>
+          </article>
+
+          <article class="card skill-card reveal">
+            <h3 class="skill-card__title"><i class="fa-solid fa-desktop" aria-hidden="true"></i> Frontend Technologies</h3>
+            <ul class="badges">
+              <li>React</li><li>Angular</li><li>React Native</li><li>Ionic</li>
+            </ul>
+          </article>
+
+          <article class="card skill-card reveal">
+            <h3 class="skill-card__title"><i class="fa-solid fa-server" aria-hidden="true"></i> Backend Technologies</h3>
+            <ul class="badges">
+              <li>FastAPI</li><li>Node.js</li><li>RESTful APIs</li><li>JSON</li><li>API Design &amp; Integration</li>
+            </ul>
+          </article>
+
+          <article class="card skill-card reveal">
+            <h3 class="skill-card__title"><i class="fa-solid fa-database" aria-hidden="true"></i> Databases</h3>
+            <ul class="badges">
+              <li>PostgreSQL</li><li>SQL Server</li><li>MongoDB</li><li>Pinecone (vector DB)</li>
+            </ul>
+          </article>
+
+          <article class="card skill-card reveal">
+            <h3 class="skill-card__title"><i class="fa-solid fa-cubes" aria-hidden="true"></i> Frameworks &amp; Libraries</h3>
+            <ul class="badges">
+              <li>Pydantic</li><li>SQLAlchemy</li><li>PyTest</li><li>NumPy</li><li>Pandas</li><li>PyTorch</li><li>TensorFlow</li>
+            </ul>
+          </article>
+
+          <article class="card skill-card reveal">
+            <h3 class="skill-card__title"><i class="fa-solid fa-cloud" aria-hidden="true"></i> Tools &amp; Platforms</h3>
+            <ul class="badges">
+              <li>AWS (S3, EC2, Lambda, ECS, IAM)</li><li>AWS CDK</li><li>Docker</li><li>Terraform</li><li>IaC</li>
+              <li>CI/CD (GitLab)</li><li>Git</li><li>GitHub Copilot</li><li>Claude Code</li><li>ETL</li>
+            </ul>
+          </article>
+
+          <article class="card skill-card reveal">
+            <h3 class="skill-card__title"><i class="fa-solid fa-robot" aria-hidden="true"></i> AI &amp; Domain Expertise</h3>
+            <ul class="badges">
+              <li>LLMs</li><li>RAG</li><li>AI Model Integration</li><li>JS AI Framework</li><li>Fintech</li><li>Banking</li><li>CRM</li><li>Analytics Platforms</li>
+            </ul>
+          </article>
+
+          <article class="card skill-card reveal">
+            <h3 class="skill-card__title"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i> Methodologies</h3>
+            <ul class="badges">
+              <li>Agile</li><li>Scrum</li><li>Kanban</li><li>SDLC</li><li>Object-Oriented Design</li>
+            </ul>
+          </article>
+
+          <article class="card skill-card reveal">
+            <h3 class="skill-card__title"><i class="fa-solid fa-people-group" aria-hidden="true"></i> Soft Skills</h3>
+            <ul class="badges">
+              <li>Problem Solving</li><li>Communication</li><li>Analytical Skills</li><li>Team Collaboration</li><li>Code Quality</li><li>Observability</li><li>Documentation</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section section--alt" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__kicker">Experience</p>
+          <h2 id="experience-title" class="section__title">Where I've worked</h2>
+        </header>
+
+        <ol class="timeline">
+
+          <li class="timeline__item reveal">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <article class="card">
+              <header class="job__head">
+                <div>
+                  <h3 class="card__title">Senior Software Developer</h3>
+                  <p class="card__sub">Micro Tech · London, UK</p>
+                </div>
+                <span class="pill pill--live">Sep 2023 – Present</span>
+              </header>
+              <ul class="bullets">
+                <li>Designed and developed a web platform for CRM and CMS using Python FastAPI, React, TypeScript and PostgreSQL, integrating third-party APIs in collaboration with the government and building AI models.</li>
+                <li>Architected and implemented RAG workflows, integrating vector databases like Pinecone to ground AI responses in proprietary data.</li>
+                <li>Maintained and optimised GitLab CI/CD pipelines to automate testing, containerisation and deployment across MLOps and cloud infrastructure.</li>
+                <li>Owned services across the full operational lifecycle: technical design, automated testing, deployment, production monitoring and on-call operations.</li>
+                <li>Partnered directly with non-technical Ethiopian Government business partners, operations teams and product owners to turn ambiguous business requirements into technical specifications and shipped software.</li>
+              </ul>
+            </article>
+          </li>
+
+          <li class="timeline__item reveal">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <article class="card">
+              <header class="job__head">
+                <div>
+                  <h3 class="card__title">Software Engineer</h3>
+                  <p class="card__sub">Tango IT Solutions · Chennai, India</p>
+                </div>
+                <span class="pill">Jan 2022 – Sep 2022</span>
+              </header>
+              <ul class="bullets">
+                <li>Led development of a scalable data analytics dashboard using Python FastAPI, React, TypeScript and PostgreSQL with advanced data visualisation.</li>
+                <li>Optimised backend architecture in Python and implemented efficient ETL workflows for high-volume data processing.</li>
+                <li>Designed and deployed custom LLM-based AI models using PyTorch and TensorFlow, improving inference speed by 19%.</li>
+                <li>Designed PostgreSQL relational data models for transactional consistency, auditing and low-latency spatial/temporal indexing, decoupling heavy analytical reads from core execution paths.</li>
+                <li>Architected custom ChatGPT LLM pipelines and tool-use frameworks into core enterprise workflows, automating complex tasks and reducing manual overhead.</li>
+                <li>Guided a junior team through Agile sprints, supporting skills development and successful delivery.</li>
+              </ul>
+            </article>
+          </li>
+
+          <li class="timeline__item reveal">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <article class="card">
+              <header class="job__head">
+                <div>
+                  <h3 class="card__title">Front-End Developer</h3>
+                  <p class="card__sub">Astralis Solutions · Chennai, India</p>
+                </div>
+                <span class="pill">Aug 2021 – Dec 2021</span>
+              </header>
+              <ul class="bullets">
+                <li>Developed and maintained fintech dashboards and e-commerce UI with React and React Native, focusing on UX and performance.</li>
+                <li>Integrated secure third-party payment gateways and blockchain features into client platforms.</li>
+                <li>Deployed front-end applications on AWS and supported marketing campaigns with user-facing promotional websites and apps.</li>
+                <li>Created real-time B2C interfaces for sales tracking and investor reporting.</li>
+                <li>Built responsive, accessible components and integrated RESTful APIs for low-latency data rendering and seamless user workflows.</li>
+              </ul>
+            </article>
+          </li>
+
+          <li class="timeline__item reveal">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <article class="card">
+              <header class="job__head">
+                <div>
+                  <h3 class="card__title">Software Developer</h3>
+                  <p class="card__sub">TRDFIN Support Services (EURO Exim Bank) · Chennai, India</p>
+                </div>
+                <span class="pill">Oct 2020 – Jul 2021</span>
+              </header>
+              <ul class="bullets">
+                <li>Architected core modules for a multi-tenant, SSO-enabled CRM/CMS platform using Python, React and SQL, strengthening security and authentication workflows.</li>
+                <li>Engineered type-safe cloud infrastructure across polyglot repositories using AWS CDK in TypeScript, streamlining infrastructure-as-code deployment.</li>
+                <li>Built full-stack AI integration pipelines on third-party LLM APIs, optimising token use and context-window management for fast, cost-effective digital asset generation and validation.</li>
+                <li>Developed custom Salesforce integrations and responsive React UI components, bridging internal data systems with external CRM capabilities.</li>
+              </ul>
+            </article>
+          </li>
+
+          <li class="timeline__item reveal">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <article class="card">
+              <header class="job__head">
+                <div>
+                  <h3 class="card__title">Software Developer</h3>
+                  <p class="card__sub">Freelance</p>
+                </div>
+                <span class="pill">Jan 2019 – Aug 2020</span>
+              </header>
+              <ul class="bullets">
+                <li>Built data-driven dashboards and reports using Node.js and React.</li>
+                <li>Carried out data pre-processing and validation with Python (pandas) and MongoDB to ensure report accuracy.</li>
+                <li>Performed root-cause analysis and troubleshooting across computational stacks with senior engineering support.</li>
+                <li>Delivered cross-platform mobile apps with Angular Ionic for sales and operations insights.</li>
+              </ul>
+            </article>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <!-- NOTE: The CV has no separate personal projects, so these cards are built ONLY from the work
+         described under Professional Experience. Replace or extend them with real personal projects. -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__kicker">Featured Projects</p>
+          <h2 id="projects-title" class="section__title">Selected professional work</h2>
+          <p class="section__lead">
+            Most of this work was delivered for employers and clients, so source code and live demos may be private.
+            Public links appear on a card only when added in <code>script.js</code>.
+          </p>
+        </header>
+
+        <div class="cards cards--3">
+
+          <article class="card project reveal" data-project="govCrm">
+            <div class="project__icon" aria-hidden="true"><i class="fa-solid fa-landmark"></i></div>
+            <h3 class="card__title">Government CRM/CMS Platform</h3>
+            <p class="project__desc">A full-stack CRM and CMS web platform integrated with government APIs and custom AI models, delivered with government business partners.</p>
+            <ul class="bullets bullets--tight">
+              <li>Third-party and government API integration</li>
+              <li>AI models embedded into platform workflows</li>
+              <li>Requirements translated from non-technical stakeholders</li>
+            </ul>
+            <ul class="badges badges--sm"><li>Python</li><li>FastAPI</li><li>React</li><li>TypeScript</li><li>PostgreSQL</li></ul>
+            <div class="project__links"></div>
+          </article>
+
+          <article class="card project reveal" data-project="rag">
+            <div class="project__icon" aria-hidden="true"><i class="fa-solid fa-brain"></i></div>
+            <h3 class="card__title">RAG Workflows with Pinecone</h3>
+            <p class="project__desc">Retrieval-Augmented Generation workflows that ground AI responses in proprietary data using vector databases.</p>
+            <ul class="bullets bullets--tight">
+              <li>Vector-database retrieval for data-driven answers</li>
+              <li>CI/CD with GitLab across MLOps and cloud</li>
+              <li>Full lifecycle ownership including monitoring and on-call</li>
+            </ul>
+            <ul class="badges badges--sm"><li>RAG</li><li>Pinecone</li><li>LLMs</li><li>GitLab CI/CD</li></ul>
+            <div class="project__links"></div>
+          </article>
+
+          <article class="card project reveal" data-project="analytics">
+            <div class="project__icon" aria-hidden="true"><i class="fa-solid fa-chart-line"></i></div>
+            <h3 class="card__title">Data Analytics Dashboard</h3>
+            <p class="project__desc">A scalable analytics dashboard with advanced data visualisation, backed by efficient ETL for high-volume data.</p>
+            <ul class="bullets bullets--tight">
+              <li>ETL workflows for high-volume processing</li>
+              <li>PostgreSQL models with low-latency spatial/temporal indexing</li>
+              <li>LLM models with 19% faster inference</li>
+            </ul>
+            <ul class="badges badges--sm"><li>Python</li><li>FastAPI</li><li>React</li><li>TypeScript</li><li>PostgreSQL</li><li>PyTorch</li><li>TensorFlow</li></ul>
+            <div class="project__links"></div>
+          </article>
+
+          <article class="card project reveal" data-project="llmPipelines">
+            <div class="project__icon" aria-hidden="true"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+            <h3 class="card__title">Enterprise LLM Pipelines</h3>
+            <p class="project__desc">Custom ChatGPT LLM pipelines and tool-use frameworks integrated into core enterprise workflows to automate complex tasks.</p>
+            <ul class="bullets bullets--tight">
+              <li>Significantly reduced manual operational overhead</li>
+              <li>Token and context-window optimisation for cost-effective generation</li>
+              <li>Digital asset generation and validation workflows</li>
+            </ul>
+            <ul class="badges badges--sm"><li>LLM APIs</li><li>ChatGPT</li><li>Python</li><li>Tool-use frameworks</li></ul>
+            <div class="project__links"></div>
+          </article>
+
+          <article class="card project reveal" data-project="ssoCrm">
+            <div class="project__icon" aria-hidden="true"><i class="fa-solid fa-user-shield"></i></div>
+            <h3 class="card__title">Multi-Tenant SSO CRM/CMS</h3>
+            <p class="project__desc">Core modules for a multi-tenant, SSO-enabled CRM/CMS platform for enterprise applications at EURO Exim Bank's technology partner.</p>
+            <ul class="bullets bullets--tight">
+              <li>Stronger security and authentication workflows</li>
+              <li>Type-safe infrastructure as code with AWS CDK</li>
+              <li>Custom Salesforce integrations</li>
+            </ul>
+            <ul class="badges badges--sm"><li>Python</li><li>React</li><li>SQL</li><li>AWS CDK</li><li>TypeScript</li><li>Salesforce</li></ul>
+            <div class="project__links"></div>
+          </article>
+
+          <article class="card project reveal" data-project="fintech">
+            <div class="project__icon" aria-hidden="true"><i class="fa-solid fa-credit-card"></i></div>
+            <h3 class="card__title">Fintech Dashboards &amp; E-commerce UI</h3>
+            <p class="project__desc">Fintech dashboards, e-commerce interfaces and real-time B2C views for sales tracking and investor reporting.</p>
+            <ul class="bullets bullets--tight">
+              <li>Secure payment gateway and blockchain feature integration</li>
+              <li>Responsive, accessible, low-latency components</li>
+              <li>Deployed on AWS</li>
+            </ul>
+            <ul class="badges badges--sm"><li>React</li><li>React Native</li><li>REST APIs</li><li>AWS</li></ul>
+            <div class="project__links"></div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CERTIFICATIONS & ACHIEVEMENTS ============ -->
+    <section class="section section--alt" id="certifications" aria-labelledby="cert-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__kicker">Certifications &amp; Achievements</p>
+          <h2 id="cert-title" class="section__title">Recognition and credentials</h2>
+        </header>
+
+        <div class="cards cards--3">
+          <article class="card ach reveal">
+            <div class="ach__icon" aria-hidden="true"><i class="fa-solid fa-gauge-high"></i></div>
+            <h3 class="card__title">19% faster inference</h3>
+            <p class="card__sub">Designed and deployed custom LLM models with PyTorch and TensorFlow at Tango IT Solutions.</p>
+          </article>
+
+          <article class="card ach reveal">
+            <div class="ach__icon" aria-hidden="true"><i class="fa-solid fa-users"></i></div>
+            <h3 class="card__title">Team leadership</h3>
+            <p class="card__sub">Guided a junior team through Agile sprints to successful delivery.</p>
+          </article>
+
+          <article class="card ach reveal">
+            <div class="ach__icon" aria-hidden="true"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3 class="card__title">DBS security clearance</h3>
+            <p class="card__sub">Valid DBS security clearance, plus a UK Category B driving licence.</p>
+          </article>
+
+          <article class="card ach ach--placeholder reveal">
+            <div class="ach__icon" aria-hidden="true"><i class="fa-solid fa-certificate"></i></div>
+            <h3 class="card__title">[Add Certifications]</h3>
+            <p class="card__sub">No certifications are listed in the CV yet. Add any (e.g. cloud or Agile credentials) in <code>index.html</code>.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__kicker">Contact</p>
+          <h2 id="contact-title" class="section__title">Let's work together</h2>
+          <p class="section__lead">Have a role or project in mind? Send me a message and I'll get back to you.</p>
+        </header>
+
+        <div class="contact__grid">
+          <div class="contact__info reveal">
+            <ul class="contact__list">
+              <li>
+                <span class="contact__icon" aria-hidden="true"><i class="fa-solid fa-envelope"></i></span>
+                <div><span class="contact__label">Email</span><a href="mailto:prathikavinc001@gmail.com">prathikavinc001@gmail.com</a></div>
+              </li>
+              <li>
+                <span class="contact__icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></span>
+                <div><span class="contact__label">Location</span><span>Feltham, London, UK</span></div>
+              </li>
+              <!-- Phone number is on your CV but left off the public page for privacy. To show it, add a list item here. -->
+              <li>
+                <span class="contact__icon" aria-hidden="true"><i class="fa-brands fa-github"></i></span>
+                <div><span class="contact__label">GitHub</span><a href="#" data-link="github" data-label="true">[Add GitHub URL]</a></div>
+              </li>
+              <li>
+                <span class="contact__icon" aria-hidden="true"><i class="fa-brands fa-linkedin-in"></i></span>
+                <div><span class="contact__label">LinkedIn</span><a href="#" data-link="linkedin" data-label="true">[Add LinkedIn URL]</a></div>
+              </li>
+            </ul>
+          </div>
+
+          <form class="form card reveal" id="contactForm" novalidate aria-label="Contact form">
+            <div class="form__row">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required minlength="2" aria-describedby="name-error" />
+              <p class="form__error" id="name-error" role="alert"></p>
+            </div>
+
+            <div class="form__row">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="email-error" />
+              <p class="form__error" id="email-error" role="alert"></p>
+            </div>
+
+            <div class="form__row">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required minlength="3" aria-describedby="subject-error" />
+              <p class="form__error" id="subject-error" role="alert"></p>
+            </div>
+
+            <div class="form__row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required minlength="10" aria-describedby="message-error"></textarea>
+              <p class="form__error" id="message-error" role="alert"></p>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--block">Send Message <i class="fa-solid fa-paper-plane" aria-hidden="true"></i></button>
+            <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+
+            <p class="form__note">
+              <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+              This is a static website, so real email delivery needs a backend or a form service
+              (such as Formspree, Netlify Forms or EmailJS). Until one is connected, sending opens
+              your email app with the message pre-filled.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; <span id="year">2026</span> Kavin Prathi Chellamuthu. All rights reserved.</p>
+      <ul class="socials socials--sm" aria-label="Footer social links">
+        <li><a href="#" data-link="github" class="social-link" aria-label="GitHub profile"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
+        <li><a href="#" data-link="linkedin" class="social-link" aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+        <li><a href="mailto:prathikavinc001@gmail.com" class="social-link" aria-label="Send an email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="to-top" id="toTop" aria-label="Back to top" type="button">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- Toast (small pop-up message) -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
