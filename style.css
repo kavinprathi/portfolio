@@ -270,10 +270,9 @@ code { background: var(--accent-soft); padding: 0.1em 0.4em; border-radius: 6px;
 .toast.show { opacity: 1; transform: translate(-50%, 0); }
 
 /* ---------- 15. Scroll-reveal animation ---------- */
-.reveal { opacity: 0; transform: translateY(26px); transition: opacity 0.7s ease, transform 0.7s ease; }
-.reveal.visible { opacity: 1; transform: none; }
-/* If JavaScript is unavailable, never hide content */
-.no-js .reveal { opacity: 1; transform: none; }
+.js .reveal { opacity: 0; transform: translateY(26px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.js .reveal.visible { opacity: 1; transform: none; }
+/* Content is only hidden when the 'js' class is set on <html> (see index.html), so it never stays blank if the script fails to load */
 
 /* ---------- 16. Responsive ---------- */
 @media (max-width: 960px) {
@@ -310,5 +309,5 @@ code { background: var(--accent-soft); padding: 0.1em 0.4em; border-radius: 6px;
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
-  .reveal { opacity: 1; transform: none; }
+  .js .reveal { opacity: 1; transform: none; }
 }
